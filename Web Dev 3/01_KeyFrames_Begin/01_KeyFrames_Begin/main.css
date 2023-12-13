@@ -1,0 +1,357 @@
+.animationDiv {
+    height: 500px;
+}
+
+.animationDiv:nth-child(1) {
+    width: 50%;
+}
+
+.animationDiv:nth-child(2) {
+    width: 50%;
+}
+
+.dual {
+    display: flex;
+    justify-content: space-between;
+}
+/************************************/
+/*          Animation One           */
+/************************************/
+/* 
+TODO
+
+1. Create a keyframe animation called leftMove
+    > At 0% the left property should be 0
+    > At 50% the left property should be 50%
+    > At 50% the transform property should be scaleX(-1)
+    > At 100% the left property should be 0
+
+Reference (keyframes): https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp
+Reference (transform): https://www.w3schools.com/cssref/css3_pr_transform.asp
+
+*/
+/* YOUR CODE STARTS HERE */
+    @keyframes leftMove{
+        0%{left:0;}
+        50%{
+            left:50%;
+            transform:scaleX(-1)
+        }
+        100%{left:0}
+    }
+        
+        
+
+
+/* YOUR CODE ENDS HERE */
+
+/*
+TODO
+
+2. Create a keyframe animation called rightMove
+    > At 0% the right property should be 0
+    > At 50% the right property should be 50%
+    > At 50% the transform property should be scaleX(-1)
+    > At 100% the right property should be 0
+
+Reference (keyframes): https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp
+Reference (transform): https://www.w3schools.com/cssref/css3_pr_transform.asp
+
+*/
+/* YOUR CODE STARTS HERE */
+    @keyframes rightMove{
+        0%{right:0}
+        50% {
+            right:50%;
+            transform:scaleX(-1)
+        }
+        
+        100%{right:0}
+    }
+
+
+
+/* YOUR CODE ENDS HERE */
+
+
+.container {
+    position: relative;
+    height: 300px;
+    width: 100vw;
+    background-color: #E5E5E5;
+}
+
+
+/* 
+TODO
+
+3. Style the div with the class of left (.left)
+        > Set the position to absolute
+        > Set the top to 50%
+        > Set the left to 0
+        > Set the transform to translate(0, -50%)
+        > Set the width to 100px
+        > Set the height to 100px
+        > Set the background-color to gray
+        > Add the leftMove animation and 
+            > set the animation-duration to 4s and 
+            > the animation-iteration-count to infinite
+
+Reference (position): https://www.w3schools.com/cssref/pr_class_position.asp
+Reference (transform): https://www.w3schools.com/cssref/css3_pr_transform.asp
+Reference (animation): https://www.w3schools.com/cssref/css3_pr_animation.asp
+
+*/
+.left {
+    /* YOUR CODE STARTS HERE */
+    position:absolute;
+    top:50%;
+    left:0;
+    transform:translate(0,-50%);
+    width:100px;
+    height:100px;
+    background-color: gray;
+    animation-name: leftMove  ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+
+
+    /* YOUR CODE ENDS HERE */
+}
+
+/* 
+TODO
+
+4. Style the div with the class of right (.right)
+        > Set the position to absolute
+        > Set the top to 50%
+        > Set the right to 0
+        > Set the transform to translate(0, -50%)
+        > Set the width to 80px
+        > Set the height to 80px
+        > Set the background-color to brown
+        > Add the rightMove animation and 
+            > set the animation-duration to 4s and 
+            > the animation-iteration-count to infinite
+
+Reference (position): https://www.w3schools.com/cssref/pr_class_position.asp
+Reference (transform): https://www.w3schools.com/cssref/css3_pr_transform.asp
+Reference (animation): https://www.w3schools.com/cssref/css3_pr_animation.asp
+
+*/
+.right {
+    /* YOUR CODE STARTS HERE */
+    position: absolute;
+    top: 50%;
+    right:0;
+    transform:translate(0,-50%);
+    width:80px;
+    height:80px;
+    background-color: brown;
+    animation-name: rightMove;
+    animation-duration: 4s;
+    animation-iteration-count:  infinite;
+    
+    
+    /* YOUR CODE ENDS HERE */
+}
+
+/************************************/
+/*          Animation Two           */
+/************************************/
+
+/*
+TODO
+
+5. Create a keyframe animation called myAnimation
+    > At 0% the transform property should be translateX(0)
+    > At 25% the transform property should be translateX(200px) and the background-color should be red
+    > At 50% the transform property should be translate(200px, 200px) and the background-color should be yellow
+    > At 75% the transform property should be translate(0, 200px) and the background-color should be green
+    > At 100% the transform property should be translate(0) and the background-color should be blue
+
+Reference (keyframes): https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp
+Reference (transform): https://www.w3schools.com/cssref/css3_pr_transform.asp
+
+*/
+@keyframes myAnimation {
+    /* YOUR CODE STARTS HERE */
+    0%{transform:translateX(0)}
+    25%{
+        transform:translateX(200px);
+        background-color: red;
+    }
+    50%{
+        transform:translate(200px,200px);
+        background-color: yellow;
+    }
+    75%{transform:translate(0,200px);
+        background-color: green;
+    }
+    100%{transform:translate(0);
+        background-color:blue;
+    }
+
+
+    
+    
+    
+    /* YOUR CODE ENDS HERE */
+}
+
+
+
+/* 
+EXAMPLE IMPLEMENTATION
+
+6. Style the div with the class of box (.box)
+        > Set the width to 200px
+        > Set the height to 200px
+        > Set the background-color to blue
+        > Set the position to relative
+        > Add the myAnimation animation and 
+            > set the animation-duration to 4s and 
+            > the animation-iteration-count to infinite
+
+Reference (position): https://www.w3schools.com/cssref/pr_class_position.asp
+Reference (animation): https://www.w3schools.com/cssref/css3_pr_animation.asp
+
+*/
+.box {
+    /* YOUR CODE STARTS HERE */
+    width:200px;
+    height:200px;
+    background-color: blue;
+    position: relative;
+    animation-name: myAnimation ;
+    animation-duration:4s;
+    animation-iteration-count:  infinite;
+    
+    
+    
+    /* YOUR CODE ENDS HERE */
+}
+
+/************************************/
+/*          Animation Three         */
+/************************************/
+.main {
+width: 700px;
+height: 700px;
+position: relative;
+overflow: hidden;
+}
+
+
+/* 
+TODO
+
+7. Create a keyframe animation called moveAnimation
+    > At 0% the top property to 0 and the left property to 0
+    > At 25% the top property to 0 and the left property to 400px
+    > At 50% the top property to 400px and the left property to 400px
+    > At 75% the top property to 400px and the left property to 0
+    > At 100% the top property to 0 and the left property to 0
+*/
+@keyframes moveAnimation {
+    /* YOUR CODE STARTS HERE */
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    25% {
+        top: 20px;
+        left: 30px;
+    }
+
+    50% {
+        top: 0;
+        left: 10px;
+    }
+
+    75% {
+        top: 10px;
+        left: 0;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+    }
+    /* YOUR CODE ENDS HERE */
+}
+
+
+
+/* 
+TODO:
+
+8. Style the div with the class of object (.object)
+        > Set the width to 50px
+        > Set the height to 50px
+        > Set the position to absolute
+        > Set the border-radius to 50%
+        > Set the background-color to #ff6b6b
+        > Add the moveAnimation animation and 
+            > set the animation-duration to 4s and 
+            > the animation-iteration-count to infinite
+
+Reference (position): https://www.w3schools.com/cssref/pr_class_position.asp
+Reference (animation): https://www.w3schools.com/cssref/css3_pr_animation.asp
+
+*/
+.object {
+    /* YOUR CODE STARTS HERE */
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #ff6b6b;
+    animation: moveAnimation 4s infinite;    
+    
+    
+    /* YOUR CODE ENDS HERE */
+}
+
+.object:nth-child(2) {
+    background-color: #ffd166;
+    animation-delay: 0.4s;
+}
+
+.object:nth-child(3) {
+    background-color: #06d6a0;
+    animation-delay: 0.8s;
+}
+
+.object:nth-child(4) {
+    background-color: #118ab2;
+    animation-delay: 1.2s;
+}
+
+.object:nth-child(5) {
+    background-color: #073b4c;
+    animation-delay: 1.6s;
+}
+.object:nth-child(6) {
+    background-color: #824d81;
+    animation-delay: 1.6s;
+} 
+
+.object:nth-child(7) {
+    background-color: #3aa556;
+    animation-delay: 1.6s;
+}
+
+.object:nth-child(8) {
+    background-color: #9c5d35;
+    animation-delay: 1.6s;
+}
+
+.object:nth-child(9) {
+    background-color: #522a8b;
+    animation-delay: 1.6s;
+}
+/* Eye Looking Around Animation */
+

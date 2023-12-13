@@ -1,0 +1,24 @@
+body,div,section,ul,li,p,small,span,table,th,td,
+        h1,h2,h3,h5,h6
+        {
+            padding: 0;
+            margin: 0;
+        }
+#navbar> ul{
+    display: flex;
+    list-style: none;
+}
+#navbar{
+    width:70%;
+    position: relative;
+    left:9% ; 
+
+}
+li{
+padding-left: 10px;
+color:rgb(28,85,242);
+}
+#screen_heading{
+    align-items:center;
+    text-align:center;
+}

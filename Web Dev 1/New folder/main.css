@@ -1,0 +1,206 @@
+body {
+  background: #2e637e;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+table {
+  border-collapse: collapse;
+  box-shadow: 20px 20px 20px 5px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  text-align: left;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+/*
+
+In the th below
+TODO: 
+  > set the padding to 8px
+  > give it a background with the value rgb(43, 102, 136)
+
+  > assign the text the color value of rgba(#cedbe2, 0.85)
+  https://www.w3schools.com/cssref/pr_text_color.php
+
+  > transform the text to uppercase 
+  Reference: https://www.w3schools.com/cssref/pr_text_text-transform.php
+
+  > Space out the letters with the value 0.1rem
+  Reference: https://www.w3schools.com/cssref/pr_text_letter-spacing.php
+  
+*/
+th {
+  padding: 8px;
+  background: rgb(43,102,136);
+  -webkit-text-fill-color: rgba(#cedbe2,0.85);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+
+  
+
+}
+
+td {
+  padding: .75rem 2rem;
+}
+
+/* 
+TODO: 
+Reference: https://www.w3schools.com/CSSref/sel_nth-child.php
+
+> provide the first child of the tr element with a unique font.
+Reference: https://www.w3schools.com/cssref/pr_font_font-family.php
+
+> set the font size to any preferred value.
+Refernce: https://www.w3schools.com/css/css_font_size.asp
+
+*/
+
+tr:nth-child(1){
+  background-color:hsl(201, 29%, 50%);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: medium;
+}
+
+
+/* 
+Reference: https://www.w3schools.com/CSSref/sel_nth-child.php
+
+TODO: 
+> provide the second child the below code
+*/
+tr:nth-child(2) {
+  background-color:hsl(201, 29%, 50%);
+}
+
+/* 
+Reference: https://www.w3schools.com/CSSref/sel_nth-child.php
+
+TODO: 
+> provide a different background color to the third child
+*/
+tr:nth-child(3) {
+  background-color:hsl(0, 0%, 0%);
+}
+
+/* 
+Reference: https://www.w3schools.com/CSSref/sel_nth-child.php
+
+TODO: 
+> provide the fourth child the below code
+*/
+tr:nth-child(4) {
+  background-color: hsl(201, 29%, 50%);
+}
+
+
+/* 
+TODO: 
+> set the cursor to a custom style (pick any you like)
+
+Refernce: https://www.w3schools.com/cssref/pr_class_cursor.php
+*/
+tr:hover {
+  background-color: hsl(52, 66%, 49%);
+  cursor: pointer;
+
+}
+
+
+.tiny-padding {
+  padding: 5px;
+  text-align: center;
+}
+
+button {  
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.btn-group {
+  display: flex;
+  gap: .375rem;
+}
+
+.btn {
+  color: rgba(47, 69, 87, 0.85);
+  width: 65px;
+  height: 30px;
+  padding: 3px;
+  border-radius: 50px;
+}
+
+/* Pseudo Selectors 
+Pseudo selectors are selectors that symbolise the state of
+an element. You might have noticed it somewhere without
+knowing that it is pseudo code. For example if you search for
+anything on google most of teh links have a blue color, but the 
+ones you've visited previously have a purplish color. In such cases
+the psuedo code :visited is used.
+
+Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+
+Here, we'll work with :hover and :focus - they're both activated when 
+we place the cursor/mouse pointer over an element.
+
+
+*/
+/* 
+The .btn class has been assigned the pseudo code :hover and :focus
+TODO: 
+> Change the cursor to pointer
+> change the background to rgb(#0e77ab, 0.5) 
+  or any other preferrable color
+
+Reference: https://www.w3schools.com/cssref/pr_class_cursor.php
+*/
+.btn{
+cursor: pointer;
+background-color:  rgb(#0e77ab, 0.5) ;
+
+
+
+}
+
+.btn.red {
+  background-color: #080200;
+}
+
+
+/* 
+TODO:
+> add a pseudo class to of :hover and :focus to the below selector
+
+Reference: https://www.w3schools.com/css/css_pseudo_classes.asp
+*/
+.btn.red,
+.btn.red {
+  color: #fff;
+  background-color: hsl(359, 92%, 21%);
+}
+
+.btn.blue {
+  background-color: hsl(200, 25%, 74%);
+}
+
+
+/* 
+TODO:
+> set the color of the text to #fff - this means white color
+> set the background-color to hsl(201, 49%, 39%)
+
+Reference: https://www.w3schools.com/cssref/pr_text_color.php
+*/
+.btn.blue:hover,
+.btn.blue:focus {
+  text-decoration-color:#fff;
+  background-color: hsl(201, 49%, 39%);
+
+}

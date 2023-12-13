@@ -1,0 +1,12 @@
+{
+    "name":"oojs_library_management_system",
+    "version": "1.0.0",
+    "description": "This is my library project",
+    "main": "main.js",
+    "type": "module",
+    "scripts": {
+        "start": "node main.js"
+    },
+    "author": "Your Name"
+    
+}

@@ -1,0 +1,15 @@
+img{
+    width: 150px;
+    height: 150px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+} 
+
+.subcontainer {
+    width: 70vw;
+    height: 100vh;
+}

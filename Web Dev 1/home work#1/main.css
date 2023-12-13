@@ -1,0 +1,17 @@
+.main{
+    display: flex;
+    justify-content:center;
+}
+
+.subcontainer{
+    width: 60vw;
+    text-align: center;
+}
+
+.image_span{
+    width: 100%
+}
+
+.image{
+    width: 100%
+}

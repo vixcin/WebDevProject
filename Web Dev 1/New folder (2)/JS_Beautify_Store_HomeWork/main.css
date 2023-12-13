@@ -1,0 +1,28 @@
+#main_container{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#subcontainer{
+    min-width: 65vw;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+.action{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+#buy_now{
+    padding-top:5px;
+    height: 30px;
+    width: 120px;
+    background-color: lightcoral;
+    border-radius: 10px;
+
+}

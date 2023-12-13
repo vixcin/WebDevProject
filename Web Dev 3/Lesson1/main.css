@@ -1,0 +1,135 @@
+/*
+In CSS we use the name of teh elements to access indivudual elements
+We can also use the id and class attributes to access elements
+*/
+body {
+    margin:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+/*
+When using classes to access an element we have to use the dot infront of the 
+name of the class
+*/
+.top {
+    display:flex;
+    justify-content:space-around;
+    align-items: center;   
+}
+
+/* 
+======================================
+LOGO BAR STYLES
+======================================
+*/
+
+/*
+When using an id to access an element we have to use the hash tag (#) infront of the 
+name of the class
+*/
+#logo {
+    width:10%;
+    height: 10%;
+    border-radius: 50%;
+    border-style: ridge;
+    margin: 2%;
+    margin-left:0;
+}
+
+
+
+/*
+When using the element name to access an element, no special characters preceed the name, simply
+type out the name an proceed with the style block
+*/
+h1 {
+    color:white;
+    font-weight:500;
+    font-size: 5vw;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-align: right;
+}
+
+/* Use the id selector to select the splash from form HTML */
+#splash{
+    width:100%
+}
+
+/* 
+======================================
+NAVIGATION BAR STYLES
+======================================
+*/
+/* Use the class selector to select the navigator (.navigator) from form HTML */
+.navigator{
+    width:100%;
+    height: 5vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navigator div{
+    width: 120px;
+}
+
+.navigator div a {
+    text-decoration: none;
+}
+
+/* 
+======================================
+IMAGES BAR STYLES
+======================================
+*/
+
+.pics {
+    display: flex;
+    width: 100%;
+}
+
+.pics img {
+    width: 25%;
+    height: 25%;
+    padding: 2px;
+}
+
+
+/* 
+======================================
+MENU BAR STYLES
+======================================
+*/
+
+.menu {
+    text-align: center;
+    margin-top: 50px;
+}
+.menu h4{
+    text-decoration: underline;
+}
+
+/* 
+======================================
+CONTACT BAR STYLES
+======================================
+*/
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contact textarea{
+    width: 100%;
+    margin: 15%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+.contact button {
+    width: 200px;
+    font-size: 15px;
+    margin-bottom:50px ;
+}
+
+

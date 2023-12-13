@@ -1,0 +1,126 @@
+/* Syle the body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+/* Style for h5 */
+h5 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4c7daf;
+}
+
+/* Style the main div to have a left and a right div */
+#main {
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    width: 100vw;
+}
+
+/* Style the left div */
+#left {
+    text-align: left;
+    flex: 1;
+    min-width: 300px;
+    width: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    height: fit-content;
+}
+
+/* Style the right div */
+#right {
+    flex: 3;
+    min-width: 300px;
+    width: 70%;
+    background-color: #ddd;
+    padding: 20px;
+    height: fit-content;
+}
+
+/* Style the form and the input fields */
+form {
+    border: 3px solid #f1f1f1;
+}
+
+/* Stule the inputs */
+input[type=text], input[type=tel], input[type=email], input[type=url], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Style the buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+    border-radius: 45px;
+}
+
+ /*Style the submit button  */
+#submitButton {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #4CAF50;
+}
+
+/* Style the reset button */
+#resetButton {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Style for the clear button */
+#clearButton {
+    width: 120px;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Style lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style for images */
+img {
+    width: 300px;
+    height: auto;
+}
+
+/* Styles for the contact info and the buttons div */
+#contactDiv, #buttonDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style for the location Div */
+#locationDiv {
+    background-color: #396897;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+}
+
